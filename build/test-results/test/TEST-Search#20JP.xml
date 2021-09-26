@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Search JP" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-26T15:30:34" hostname="LAPTOP-L462119N" time="14.696">
+  <properties/>
+  <testcase name="valid search" classname="Search JP" time="14.696"/>
+  <system-out><![CDATA[
+@sunny @closeBrowser
+Scenario: valid search                ?[90m# features/search.feature:4?[0m
+  ?[32mWhen ?[0m?[32muser search for ?[0m?[32m?[1m"J. P. Morgan"?[0m ?[90m# org.jp.app.stepdefs.SearchStepDef.<init>(SearchStepDef.java:26)?[0m
+  ?[32mAnd ?[0m?[32mclick on first link?[0m             ?[90m# org.jp.app.stepdefs.SearchStepDef.<init>(SearchStepDef.java:27)?[0m
+  ?[32mThen ?[0m?[32mcompany logo should be shown?[0m   ?[90m# org.jp.app.stepdefs.SearchStepDef.<init>(SearchStepDef.java:28)?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 41210
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 26, 2021 9:00:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 26, 2021 9:00:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 94, so returning the closest version found: 93
+Sep 26, 2021 9:00:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 94 of 93
+]]></system-err>
+</testsuite>
